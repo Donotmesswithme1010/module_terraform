@@ -68,7 +68,7 @@ module "mkv" {
 }
 
 module "mabs" {
-  depends_on = [ module.mrgs ] 
+  depends_on = [ module.mrgs ,module.subnets] 
   source = "../../MODULE/AzureBastion"
 }
 
